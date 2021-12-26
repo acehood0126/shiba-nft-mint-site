@@ -1,0 +1,92 @@
+.accordion--item{
+    width: 100%;
+    margin-block-end: 44px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+  }
+
+  h2 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-family: 'TTHovesBold';
+  }
+
+  .container-lg {
+    padding: 50px;
+    background: #222222;
+  }
+
+  .custom--accordion {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 14px 0 13px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 19px;
+    transition: .4s ease;
+    background: transparent;
+    margin-block-end: 0;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+
+  .custom--panel {
+    background-color: transparent;
+    color: #aaa;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 1px solid #fff;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .custom--panel p{
+    margin: 0;
+  }
+
+  .custom--accordion:after {
+    content: '\002B';
+    display: block;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+
+  .custom--accordion.active  {
+    color: #F57305;
+  }
+
+  .custom--accordion.active:after {
+    content: "\2212";
+  }
+
+  .custom--accordion.active + .custom--panel{
+    box-sizing: content-box !important;
+    padding-block-end: 44px !important;
+  }
+
+
+  @media screen and (max-width: 567px){
+    .custom--accordion{
+      font-size: 1rem;
+      padding-inline-end: 30px;
+    }
+    .container-lg {
+      padding: 25px;
+    }
+    .container-lg h2 {
+      font-size: 25px;
+    }
+  }

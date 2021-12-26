@@ -1,0 +1,240 @@
+#guests{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #272727;
+    min-height: 100px;
+}
+
+.guests--content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guests--content > div {
+    max-width: 412px;
+    margin-inline-start: auto;
+}
+
+.guests--content h2 {
+  font-size: 30px;
+}
+
+.guests--wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.guest--item{
+    text-align: center;
+}
+
+.guest--item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-block-end: 18px;
+}
+.mint-title{
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: "Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.mint-date{
+    color: #fff;
+    font-size: 19px;
+    font-weight: 400;
+    text-align: center;
+    font-family: "Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.mint-category{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 5px;
+    margin:auto;
+    width: 480px;
+    margin-top: 30px;
+    font-family: "Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.mint-category>div{
+    text-align: center;
+}
+.mint-category>div>span{
+    font-family: "Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 400;
+}
+.mint-card{
+    margin-top: 15px !important;
+    width: 480px;
+    margin:auto;
+    padding: 32px;
+    background: rgb(31, 31, 31);
+    border-radius: 10px;
+}
+.mint-card-title{
+    color: rgb(252, 252, 253);
+    font-weight: 900;
+    text-align: center;
+    font-size: 42px;
+    scroll-behavior: smooth;
+    font-style: initial;
+    font-family: "Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.payment-info{
+    margin-top: 20px;
+    margin-bottom: 32px;
+    padding: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-image: initial;
+    border-radius: 10px;
+    display:flex;
+    justify-content: space-between;
+}
+.payment-info img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+.payment-info div{
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 0;
+    line-height: 2;
+    text-align: end;
+    color: #fff;
+    font-family: "Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.payment-info span{
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: rgb(241, 241, 241);
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.payment-price{
+    margin-top: 10px;
+}
+.payment-count{
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    align-items: center;
+    padding: 12px;
+    background: rgba(123, 123, 123, 0.41);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-image: initial;
+    border-radius: 10px;
+}
+.btn-group{
+    display:flex;
+    background-color: transparent;
+    color: white;
+    font-size: ;
+}
+.btn-group button{
+    background: transparent;
+    border: 0px;
+    position: relative;
+    color: rgb(241, 241, 241);
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 6px;
+    margin-left: 6px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-group div{
+    font-size: 1.5rem;
+}
+.btn-group :nth-child(3)>button{
+    margin-top: 3px;
+}
+.total-price{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    margin-bottom: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.total-price div{
+    color: white;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0 !important;
+    font-family: "Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.connect{
+    text-align: center;
+}
+.connect button{
+    padding: 12px 24px;
+    font-size: 16px;
+    color: white;
+    border: 0px;
+    background-color: #2b49e5;
+    border-radius: 2px;
+    font-family: "Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+}
+.connect button:hover{
+    background: #4f6bf7;
+}
+.set-max button{
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: 0px;
+    background-color: #2b49e5;
+    border-radius: 2px;
+    font-family: "Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.set-max button:hover{
+    background: #4f6bf7;
+}
+
+@media screen and (max-width: 768px) {
+    .guest--item {
+        margin-inline-end: 0;
+    }
+    .guests--content h2 {
+      font-size: 30px;
+    }
+}

@@ -1,0 +1,120 @@
+.new-line {
+  white-space: pre-line;
+}
+
+.roadmap--container{
+  position: relative;
+  margin-block-start: 138px;
+  padding-block-start: 60px;
+}
+
+.roadmap--line{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 100%;
+    background: #F57305;
+}
+
+.roadmap--item{
+  display: flex;
+  align-items: center;
+  margin-block-end: 140px;
+}
+
+.roadmap--wrapper > .roadmap--item:nth-child(even){
+  flex-direction: row-reverse;
+}
+
+
+
+.roadmap--item-title{
+  display: block;
+  width: calc(50% - 100px);
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.roadmap--wrapper > .roadmap--item:nth-child(even) .roadmap--item-title{
+  text-align-last: left;
+}
+
+.roadmap--point{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 100%;
+  flex-shrink: 0;
+  box-shadow: 0px 0px 9px 9px rgba(0, 0, 0, 0.7);
+}
+
+.roadmap--item h4:empty{
+  display: none;
+}
+
+.roadmap--item h4 {
+      max-width: 412px;
+    font-size: 18px;
+    line-height: 25px;
+    margin-inline-start: auto;
+}
+.roadmap--wrapper > .roadmap--item:nth-child(even) h4 {
+  margin-inline-start: 0;
+  margin-inline-end: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .roadmap--point,
+  .roadmap--line{
+    left: 0;
+    transform: translateX(0);
+  }
+
+  .roadmap--point{
+    left: -8px;
+  }
+
+  .roadmap--item {
+    margin-inline-start: 40px;
+  }
+
+  .roadmap--wrapper > .roadmap--item:nth-child(even),
+  .roadmap--wrapper > .roadmap--item{
+    flex-direction: column;
+    align-items: start;
+  }
+  .roadmap--item h4{
+    margin-inline-start: 0 !important;
+  }
+  .roadmap--item-title{
+    text-align: left;
+    margin-block-end: 20px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .roadmap--line{
+    display: none;
+  }
+
+  .roadmap--point{
+    left: 10px;
+  }
+
+  .roadmap--item {
+    margin-inline-start: 2.5rem;
+    margin-block-end: 4rem;
+  }
+
+  .roadmap--container{
+    margin-block-start: 70px;
+    padding-block-start: 0;
+  }
+
+}

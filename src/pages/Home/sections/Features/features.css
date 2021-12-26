@@ -1,0 +1,58 @@
+#features{
+    min-height: auto;
+    margin-top: 150px
+}
+.features--image-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features--content a{
+    margin-block-start: 64px;
+    color: black;
+    background-color: white;
+    font-family: 'Akira';
+    font-size: 18px;
+}
+
+h2  {
+
+  font-size: 30px;
+}
+.features--content p{
+text-align: justify;
+}
+
+
+
+.features--image-wrapper img {
+    width: 100%;
+    max-width: 523px;
+    height: 523px;
+    object-fit: cover;
+    margin-block-end: 20px;
+    margin-inline-start: 24px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .features--image-wrapper{
+        margin-block-end: 40px;
+        order: -1;
+    }
+    .features--image-wrapper img{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .features--image-wrapper img {
+      max-width: 325px;
+      height: 325px;
+      margin-inline-end: auto;
+      margin-inline-start: auto;
+      background-color: #aaa;
+      object-fit: cover;
+    }
+  }

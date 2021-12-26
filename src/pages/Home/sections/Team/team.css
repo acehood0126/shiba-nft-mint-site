@@ -1,0 +1,35 @@
+.team--wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#team {
+
+  min-height: 100px;
+}
+
+.team--item img {
+  width: 250px;
+  height: 250px;
+}
+
+.team--item a {
+  color: white;
+  font-size: 23px;
+}
+
+@media screen and (max-width: 768px) {
+    .team--item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-block-end: 18px;
+        padding: 0 8px;
+    }
+    .team--item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+  }
